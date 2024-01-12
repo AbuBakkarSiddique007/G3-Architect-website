@@ -90,36 +90,14 @@ nav li a {
 
 /* responsive media query */
 /* mobile devices */
-@media screen and (max-width : 576px) {
-    header {
-        padding: 20px;
-    }
-
-    /* je khane flex use korso oigular direction change kore dite hoi */
-    nav {
-        flex-direction: column;
-    }
-
-}
-
-/* tablet or medium devices */
-@media screen and (min-width : 576px) and (max-width : 960px) {
-    header {
-        padding: 50px;
-    }
-
-    nav {
-        flex-direction: column;
-    }
-
-}
 
 
 /* main styles  */
 main {
     /* from figma */
     max-width: 1440px;
-    margin: 0 auto;
+    /* margin: 0 auto; kaj korar shomoi eta add kore kaj kore pore change kore deya jai */
+    margin: 70px auto;
 }
 
 /* teams styles  */
@@ -152,4 +130,47 @@ main {
 .teams-title .text-features {
     color: #FF900E;
     font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width : 576px) {
+    header {
+        padding: 20px;
+    }
+
+    /* je khane flex use korso oigular direction change kore dite hoi */
+    nav,
+    .teams-container {
+        flex-direction: column;
+    }
+
+    .teams-img-container {
+        grid-template-columns: 1fr;
+    }
+
+    .teams-container {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+}
+
+/* tablet or medium devices */
+@media screen and (min-width : 576px) and (max-width : 960px) {
+    header {
+        padding: 50px;
+    }
+
+    nav,
+    .teams-container {
+        flex-direction: column;
+    }
+
 }
