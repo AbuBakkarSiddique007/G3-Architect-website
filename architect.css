@@ -173,6 +173,33 @@ main {
 
 }
 
+/* sponsor section start */
+.sponsors-title {
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.sponsors-text {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.sponsors {
+    text-align: center;
+}
+
+.sponsors-img-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.sponsors-img-container img {
+    width: 165px;
+}
 
 
 
@@ -186,7 +213,8 @@ main {
     /* je khane flex use korso oigular direction change kore dite hoi */
     nav,
     .teams-container,
-    .facts-card-container {
+    .facts-card-container,
+    .sponsors-img-container {
         flex-direction: column;
     }
 
@@ -199,11 +227,16 @@ main {
         padding-right: 20px;
         padding-left: 20px;
     }
-    .facts-card-container{
+
+    .facts-card-container {
         gap: 20px;
     }
 
 }
+
+
+
+
 
 /* tablet or medium devices */
 @media screen and (min-width : 576px) and (max-width : 960px) {
@@ -212,7 +245,8 @@ main {
     }
 
     nav,
-    .teams-container {
+    .teams-container,
+    .sponsors-img-container {
         flex-direction: column;
     }
 
