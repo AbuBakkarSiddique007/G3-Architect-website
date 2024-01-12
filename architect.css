@@ -158,6 +158,9 @@ main {
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
 }
+.features-img {
+    
+}
 
 .ten-years-badge {
     border-radius: 8px;
@@ -166,10 +169,19 @@ main {
     color: #FFF;
     width: 342px;
     padding: 40px;
+    text-align: center;
+
+    /* for change the badge positon */
+    position: relative;
+    bottom: 100px;
 }
 
 .ten-years-badge h2 {
     font-size: 4rem;
+    margin: 0;
+}
+.ten-years-badge p{
+    font-size: 1.5rem;
 }
 
 .features .features-title {
