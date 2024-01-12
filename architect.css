@@ -91,24 +91,65 @@ nav li a {
 /* responsive media query */
 /* mobile devices */
 @media screen and (max-width : 576px) {
-    header{
+    header {
         padding: 20px;
     }
 
     /* je khane flex use korso oigular direction change kore dite hoi */
-    nav{
+    nav {
         flex-direction: column;
     }
- 
+
 }
 
 /* tablet or medium devices */
-@media screen and (min-width : 576px ) and (max-width : 960px) {
-    header{
+@media screen and (min-width : 576px) and (max-width : 960px) {
+    header {
         padding: 50px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
     }
-    
+
+}
+
+
+/* main styles  */
+main {
+    /* from figma */
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* teams styles  */
+.teams-container {
+    display: flex;
+    /* left and right side er content jeno vertically center a jeno same hoi*/
+    align-items: center;
+}
+
+.teams-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 24px => 1.5rem; */
+    gap: 1.5rem;
+}
+
+.teams-content {
+    padding-right: 70px;
+    padding-left: 70px;
+}
+
+.teams-title {
+    font-size: 2.8rem;
+}
+
+.teams-title .quick-list {
+    color: #727272;
+}
+
+.teams-title .text-features {
+    color: #FF900E;
+    font-weight: 700;
 }
