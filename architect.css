@@ -2,47 +2,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
 /* shared styles */
-*{
+* {
     font-family: 'Merriweather', serif;
     font-family: 'Work Sans', sans-serif;
 }
 
-.btn-primary{
-    
+.btn-primary {
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 20px 25px;
+    color: #FFF;
+    /* font-size: 20px => 1.25rem; */
+    font-size: 1.25rem;
+    font-weight: 600;
+
+    /* added for jokhon cursor niye gele hand er logo ashe */
+    cursor: pointer;
+    /* black ekta border chilo oita remove korar jonno */
+    border: 0;
 }
 
 /* nav and header section */
-header{
+header {
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 240px;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     /* h3 and list item gula jeno pash pashi thake */
     align-items: center;
 }
-.nav-title{
+
+.nav-title {
     color: #131313;
     font-weight: 700;
-    
+
     /* font-size: 45px => 3*16= 3rem; */
     font-size: 2.8rem;
 
 
 }
-nav > ul{
+
+nav>ul {
     display: flex;
 }
 
-nav li{
+nav li {
     /* for remove the ul list icon */
-    list-style: none; 
+    list-style: none;
     /* for give space between them */
     margin-right: 30px;
 }
-nav li a{
+
+nav li a {
     text-decoration: none;
     font-weight: 500;
     font-size: 1rem;
@@ -50,19 +64,51 @@ nav li a{
 }
 
 /* banner section */
-.banner-content{
+.banner-content {
     /* width: 862px; */
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
 }
-.banner-title{
+
+.banner-title {
     color: #131313;
 
     /* font-size: 64px; => 64=>4*16=>4rem */
     font-size: 4rem;
     font-weight: 700;
 }
-.banner-description{
+
+.banner-description {
     color: #727272;
+}
+
+.banner img {
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* responsive media query */
+/* mobile devices */
+@media screen and (max-width : 576px) {
+    header{
+        padding: 20px;
+    }
+
+    /* je khane flex use korso oigular direction change kore dite hoi */
+    nav{
+        flex-direction: column;
+    }
+ 
+}
+
+/* tablet or medium devices */
+@media screen and (min-width : 576px ) and (max-width : 960px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    
 }
