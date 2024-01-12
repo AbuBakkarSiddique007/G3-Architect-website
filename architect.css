@@ -1,6 +1,68 @@
+/* work sans font from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
-* {
+/* shared styles */
+*{
     font-family: 'Merriweather', serif;
     font-family: 'Work Sans', sans-serif;
+}
+
+.btn-primary{
+    
+}
+
+/* nav and header section */
+header{
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    /* h3 and list item gula jeno pash pashi thake */
+    align-items: center;
+}
+.nav-title{
+    color: #131313;
+    font-weight: 700;
+    
+    /* font-size: 45px => 3*16= 3rem; */
+    font-size: 2.8rem;
+
+
+}
+nav > ul{
+    display: flex;
+}
+
+nav li{
+    /* for remove the ul list icon */
+    list-style: none; 
+    /* for give space between them */
+    margin-right: 30px;
+}
+nav li a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #424242;
+}
+
+/* banner section */
+.banner-content{
+    /* width: 862px; */
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+.banner-title{
+    color: #131313;
+
+    /* font-size: 64px; => 64=>4*16=>4rem */
+    font-size: 4rem;
+    font-weight: 700;
+}
+.banner-description{
+    color: #727272;
 }
