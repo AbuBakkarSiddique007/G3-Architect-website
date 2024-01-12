@@ -185,7 +185,8 @@ main {
 
     /* je khane flex use korso oigular direction change kore dite hoi */
     nav,
-    .teams-container {
+    .teams-container,
+    .facts-card-container {
         flex-direction: column;
     }
 
@@ -193,9 +194,13 @@ main {
         grid-template-columns: 1fr;
     }
 
-    .teams-container {
+    .teams-container,
+    .facts-card-container {
         padding-right: 20px;
         padding-left: 20px;
+    }
+    .facts-card-container{
+        gap: 20px;
     }
 
 }
